@@ -1,0 +1,577 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Camper Travel</title>
+  <link href="https://fonts.googleapis.com/css2?family=Outfit:wght@300;600&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css"/>
+   <link rel="stylesheet" href="style.css"/>
+</head>
+<body>
+
+ <header class="hero">
+  <nav class="navbar">
+    <div class="logo"><i class="fas fa-campground"></i> CAMPER</div>
+
+    <!-- Menu button (hamburger) -->
+    <div class="menu-btn">
+     <i class="fas fa-bars" id="menuBtn"></i>
+
+      
+      <ul class="nav-links">
+      <li><a href="#TravelMap"><i class="fas fa-home"></i> Travel Map</a></li>
+      <li><a href="#about"><i class="fas fa-map-marked-alt"></i> About Us</a></li>
+      <li><a href="#blog"><i class="fas fa-route"></i> Blog</a></li>
+      <li><a href="#contact"><i class="fas fa-route"></i> Account</a></li>
+    </ul>
+    </div>
+
+    
+  </nav>
+
+ <div class="hero-content" id="home">
+  <h1>It's Great Time<br><span>to Start Living Now</span></h1>
+  <a href="#about" class="btn">
+    <i class="fas fa-play-circle"></i> Know More
+  </a>
+
+  <!-- Social icons inside hero section -->
+  <div class="hero-socials">
+    <a href="https://www.instagram.com/yourProfile" target="_blank" rel="noopener noreferrer">
+      <i class="fab fa-instagram"></i>
+    </a>
+    <a href="https://www.twitter.com/yourProfile" target="_blank" rel="noopener noreferrer">
+      <i class="fab fa-twitter"></i>
+    </a>
+    <a href="https://www.facebook.com/yourPage" target="_blank" rel="noopener noreferrer">
+      <i class="fab fa-facebook-f"></i>
+    </a>
+  </div>
+</div>
+
+
+</header>
+
+  <section class="info-section" id="about">
+  
+  <div id="hidden-content-1" style="display:none;">
+  <h3>ABOUT</h3>
+  <p>This is more detail about the item you're reading.
+  This is more detail about the item you're reading.
+  This is more detail about the item you're reading.
+  This is more detail about the item you're reading.
+  This is more detail about the item you're reading.
+  This is more detail about the item you're reading.
+  This is more detail about the item you're reading.</p>
+  
+</div>
+
+    <div class="info-text">
+      <div class="section-header">
+      <h4 class="lined-heading"> ABOUT</h4>
+</div>
+      <h2>Become Part of<br>Two‑Week Canada Western Conquest</h2>
+      <p>Ready for an unforgettable journey? Explore the wild with us through the Canadian Rockies.</p>
+      <button onclick="readMore(document.getElementById('hidden-content-1').innerHTML)" class="read-more">Read more &rarr;</button>
+    </div>
+    <img src="hiking.jpg" alt="Hiking">
+  </section>
+  
+
+ <section class="info-section reverse" id="TravelMap">
+ 
+ <div id="hidden-content-2" style="display:none;">
+  <h3>TRAVEL MAP</h3>
+  <p>This is more detail about the item you're reading.
+  Discover scenic routes and hidden gems on our well‑planned travel adventures that connect you to nature
+  Discover scenic routes and hidden gems on our well‑planned travel adventures that connect you to nature
+  Discover scenic routes and hidden gems on our well‑planned travel adventures that connect you to nature</p>
+</div>
+
+  <img src="map.jpg" alt="Van" style="border-top-right-radius: 300px;
+  border-bottom-right-radius: 300px;
+  border-top-left-radius: 0;
+  border-bottom-left-radius: 0;">
+  <div class="info-text">
+    <div class="section-header"><h4 class="lined-heading"> TRAVEL MAP</h4></div>
+    <h2>Explore &amp; Enjoy</h2>
+    <p>Discover scenic routes and hidden gems on our well‑planned travel adventures that connect you to nature.</p>
+    <button onclick="readMore(document.getElementById('hidden-content-2').innerHTML)" class="read-more">Read more &rarr;</button>
+  </div>
+</section>
+
+
+  <section class="info-section" id="transport">
+  
+  <div  class="hiddenContent" id="hidden-content-3" style="display:none;">
+  <h3>TRANSPORT</h3>
+  <h3>How to Move Around?</h3>
+  <p style="font-family:sans-serif; text-align: left;text-shadow: none; font-size:medium;">This is more detail about the item you're reading.
+  All trips are supported by top-class camper vans that bring luxury and flexibility on the go.
+  All trips are supported by top-class camper vans that bring luxury and flexibility on the go.
+  All trips are supported by top-class camper vans that bring luxury and flexibility on the go.</p>
+</div>
+
+
+    <div class="info-text">
+      <div class="section-header">
+      <h4 class="lined-heading"> TRANSPORT</h4></div>
+      <h2>How to Move Around?</h2>
+      <p>All trips are supported by top-class camper vans that bring luxury and flexibility on the go.</p>
+      <button onclick="readMore(document.getElementById('hidden-content-3').innerHTML)" class="read-more">Read more &rarr;</button>
+    </div>
+    <img src="van.jpg" alt="Camper Van">
+  </section>
+
+    <section class="cta" id="blog">
+        <div class="cta-left">
+            <h2>Let's Explore the World Together</h2>
+            <a href="#whycamper" class="btn">Let's Go</a>
+        </div>
+        <div class="cta-right">
+            <p>CAMPER is an online travel platform on which you can personalize your 300+ camper road trip in Canada.</p>
+            <p>Our website is the only one of its kind, where it is possible to plan your camper trip for up to 60 days. By choosing your destinations and your accommodation, you are having full access to all camp updated road data and a travel guide.</p>
+        </div>
+    </section>
+
+ <section class="locations">
+ <button class="scroll-btn left" onclick="scrollLocations(-1)">&#10094;</button>
+ 
+ 
+ <div class="locationCont" id="scrollable-locations">
+  <div class="loc-box" onclick="showLocationInfo(this)" data-title="Pacific Rim" data-info="Explore lush rainforests and wild coastlines at Pacific Rim National Park.">
+    <img src="pacific.jpg" alt="Pacific Rim">
+    <div class="location-name">Pacific Rim</div>
+  </div>
+  <div class="loc-box" onclick="showLocationInfo(this)" data-title="Vancouver" data-info="A vibrant city surrounded by mountains and ocean. Perfect for all-season adventure.">
+    <img src="vancouver.jpg" alt="Vancouver">
+    <div class="location-name">Vancouver</div>
+  </div>
+  <div class="loc-box" onclick="showLocationInfo(this)" data-title="Victoria" data-info="Charming gardens, old-world architecture, and a peaceful atmosphere.">
+    <img src="victoria.jpg" alt="Victoria">
+    <div class="location-name">Victoria</div>
+  </div>
+  <div class="loc-box" onclick="showLocationInfo(this)" data-title="Calgary" data-info="Home to the Calgary Stampede and a gateway to the Rockies.">
+    <img src="calgary.jpg" alt="Calgary">
+    <div class="location-name">Calgary</div>
+  </div>
+  <div class="loc-box" onclick="showLocationInfo(this)" data-title="Whistler" data-info="Famous ski resort and outdoor playground year-round.">
+    <img src="whistler.jpg" alt="Whistler">
+    <div class="location-name">Whistler</div>
+  </div>
+  </div>
+    <button class="scroll-btn right" onclick="scrollLocations(1)">&#10095;</button>
+</section>
+
+
+  <section class="stats" id="whycamper">
+  <div class="section-header"></div>
+  <h2>Why CAMPER?</h2>
+  <p>We offer safe, guided, and flexible travel plans.</p>
+  <div class="stat-boxes">
+    
+    <div class="stat-box">
+      <i class="fa-solid fa-users"></i>
+      <h3 class="count" data-target="10000">0</h3>
+      <p class="label">Happy Customers</p>
+      <p class="desc">Thousands trust us for their memorable journeys.</p>
+    </div>
+
+    <div class="stat-box">
+      <i class="fa-solid fa-shuttle-van"></i>
+      <h3 class="count" data-target="247">0</h3>
+      <p class="label">Comfortable Vans</p>
+      <p class="desc">Modern, clean, and road-ready vans at your service.</p>
+    </div>
+
+    <div class="stat-box">
+      <i class="fa-solid fa-map-marked-alt"></i>
+      <h3 class="count" data-target="3860">0</h3>
+      <p class="label">Completed Tours</p>
+      <p class="desc">From coastlines to mountains—fully guided adventures.</p>
+    </div>
+
+  </div>
+</section>
+
+
+<section class="myother-tours" id="mytours">
+    <h2>The CAMPER Has Other Tours As Well</h2>
+    <p>Join us on unique travel experiences beyond the standard route. Discover hidden trails, exclusive spots, and local secrets with our expert guides.</p>
+    <button class="see-tours" onclick="document.getElementById('tourModal').style.display = 'block';">See The Tours</button>
+    
+</section>
+
+<div class="tour-modal" id="tourModal">
+    <div class="tour-modal-content">
+        <span class="tour-close-btn" onclick="document.getElementById('tourModal').style.display = 'none';">&times;</span>
+        <h3>Available Tours</h3>
+        <ul>
+            <li><span role="img" aria-label="mountain">🗻</span> Mountain Explorer – 3 days hike</li>
+            <li><span role="img" aria-label="beach">🏝️</span> Coastal Chill – Beach camp & surfing</li>
+            <li><span role="img" aria-label="forest">🌲</span> Forest Retreat – Wildlife spotting</li>
+            <li><span role="img" aria-label="desert">🏜️</span> Desert Nomad – Sand dunes & stargazing</li>
+        </ul>
+    </div>
+</div>
+
+
+
+    
+  
+  
+
+  <section class="plan" id="plans">
+  <div class="travel-plan-container">
+    <h2 class="plan-title">CAMPER TRAVEL PLAN</h2>
+
+    <!-- Top Row -->
+    <div class="plan-row">
+      <div class="plan-item">
+        <div class="location-name-top">Crossingham</div>
+        <div class="circle-wrapper">
+          <div class="circle">1</div>
+          <div class="tooltip">Crossingham: Starting point of the journey, campsite & orientation.</div>
+          <div class="line"></div>
+        </div>
+      </div>
+
+      <div class="plan-item">
+        <div class="location-name-top">Tainford</div>
+        <div class="circle-wrapper">
+          <div class="circle">2</div>
+          <div class="tooltip">Tainford: Famous for its local cuisine and scenic valley.</div>
+          <div class="line"></div>
+        </div>
+      </div>
+
+      <div class="plan-item">
+        <div class="location-name-top">Poultry River</div>
+        <div class="circle-wrapper">
+          <div class="circle">3</div>
+          <div class="tooltip">Poultry River: River-side picnic and kayaking.</div>
+          <div class="line"></div>
+        </div>
+      </div>
+
+      <div class="plan-item">
+        <div class="location-name-top">EntergyPass</div>
+        <div class="circle-wrapper">
+          <div class="circle">4</div>
+          <div class="tooltip">EntergyPass: Mountain pass with stunning sunset views.</div>
+        </div>
+      </div>
+    </div>
+
+    <div class="vertical-line-connector"></div>
+
+    <!-- Bottom Row -->
+    <div class="plan-row second-row">
+      <div class="plan-item">
+        <div class="location-name-bottom">Magaspan</div>
+        <div class="circle-wrapper">
+          <div class="circle">8</div>
+          <div class="tooltip">Magaspan: Desert stop with camel rides and sandboarding.</div>
+          <div class="line"></div>
+        </div>
+      </div>
+
+      <div class="plan-item">
+        <div class="location-name-bottom">Anyon</div>
+        <div class="circle-wrapper">
+          <div class="circle">7</div>
+          <div class="tooltip">Anyon: Forest lodge and wildlife photography tour.</div>
+          <div class="line"></div>
+        </div>
+      </div>
+
+      <div class="plan-item">
+        <div class="location-name-bottom">Drogon</div>
+        <div class="circle-wrapper">
+          <div class="circle">6</div>
+          <div class="tooltip">Drogon: Hot springs and relaxation resort stopover.</div>
+          <div class="line"></div>
+        </div>
+      </div>
+
+      <div class="plan-item">
+        <div class="location-name-bottom-multiple">
+          <div>Adam River Bend</div>
+        </div>
+        <div class="circle-wrapper">
+          <div class="circle">5</div>
+          <div class="tooltip">Adam River: Double stop — fishing at the Bend & hiking at the Knoll.</div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+
+ <footer class="footer">
+    <div class="footer-content">
+        <div class="footer-column">
+            <h3>Stay connected!</h3>
+            <div class="social-icons">
+                <a href="https://facebook.com" target="_blank"><i class="fab fa-facebook-f"></i></a>
+                <a href="https://twitter.com" target="_blank"><i class="fab fa-twitter"></i></a>
+                <a href="https://instagram.com" target="_blank"><i class="fab fa-instagram"></i></a>
+            </div>
+            <p class="newsletter-text">Be email informed about our news, deals, and much more.</p>
+            <form class="newsletter-form">
+                <input type="email" placeholder="Email address">
+                <button type="submit"><i class="fas fa-chevron-right"></i></button>
+            </form>
+            <p id="newsletter-message" style="display:none; color: lightgreen; margin-top: 10px;">Thank you for subscribing!</p>
+
+        </div>
+        <div class="footer-column">
+            <h3>Information</h3>
+            <ul>
+                <li><a href="#">About</a></li>
+                <li><a href="#">Careers</a></li>
+                <li><a href="#">Contact Us</a></li>
+                <li><a href="#">Our Team</a></li>
+                <li><a href="#">Privacy Policy</a></li>
+            </ul>
+        </div>
+        <div class="footer-column" id="contact">
+            <h3>Contact</h3>
+            <p>Tel. + 123 456 7890</p>
+            <p>Our office hours are <br> Monday - Friday <br> 9am - 5pm EST</p>
+            <p>support@camper.com</p>
+        </div>
+        <div class="footer-logo-column">
+            <div class="footer-logo">CAMPER</div>
+        </div>
+    </div>
+    <div class="footer-bottom">
+        <p>&copy; 2025 Camper, Inc. All rights reserved.</p>
+    </div>
+</footer>
+
+<div id="locationModal" class="modal">
+  <div class="modal-content">
+    <span class="close-btn" onclick="closeModal()">&times;</span>
+    <h2 id="modalTitle"></h2>
+    <p id="modalInfo"></p>
+  </div>
+</div>
+
+
+
+
+<script>
+
+//submit email
+
+document.querySelector('.newsletter-form').addEventListener('submit', function(e) {
+    e.preventDefault(); // Prevent actual form submission
+
+    const input = this.querySelector('input[type="email"]');
+    const email = input.value.trim();
+
+    // Basic email regex validation
+    const isValidEmail = /^[^\s@]+@[^\s@]+\.[^\s@]+$/.test(email);
+
+    if (!isValidEmail) {
+        alert('Please enter a valid email address.');
+        return;
+    }
+
+    // Show thank you message
+   const message = document.getElementById('newsletter-message');
+message.style.display = 'block';
+message.textContent = 'Thank you for subscribing!';
+setTimeout(() => {
+    message.style.display = 'none';
+}, 4000);
+
+    // Clear input field
+    input.value = '';
+});
+//end
+document.addEventListener('DOMContentLoaded', () => {
+    const counters = document.querySelectorAll('.count');
+    let animated = false;
+
+    function animateCounters() {
+        counters.forEach(counter => {
+            const target = +counter.getAttribute('data-target');
+            const duration = 2000;
+            const stepTime = 20;
+            const steps = duration / stepTime;
+            let count = 0;
+            const increment = target / steps;
+
+            const interval = setInterval(() => {
+                count += increment;
+
+                if (count >= target) {
+                    count = target; // Ensure it reaches the exact target
+                    clearInterval(interval);
+                    // Check if the target is 10000 or more and format it
+                    if (target >= 10000) {
+                        counter.textContent = (target / 1000).toFixed(0) + 'K+';
+                    } else {
+                        counter.textContent = Math.floor(count);
+                    }
+                } else {
+                    counter.textContent = Math.floor(count);
+                }
+            }, stepTime);
+        });
+    }
+
+    const statsSection = document.querySelector('.stats');
+
+    if (statsSection) {
+        const observer = new IntersectionObserver((entries) => {
+            entries.forEach(entry => {
+                if (entry.isIntersecting && !animated) {
+                    animateCounters();
+                    animated = true;
+                    observer.unobserve(entry.target);
+                }
+            });
+        }, {
+            threshold: 0.5
+        });
+
+        observer.observe(statsSection);
+    }
+});
+
+//see other tours
+// New functions for the "See The Tours" modal
+    function openTourModal() {
+        const modal = document.getElementById('tourModal');
+        if (modal) {
+            modal.style.display = 'flex'; // Use 'flex' for centering with CSS
+        }
+    }
+
+    function closeTourModal() {
+        const modal = document.getElementById('tourModal');
+        if (modal) {
+            modal.style.display = 'none';
+        }
+    }
+
+    // Keep the window click listener to close if clicking outside the modal
+    window.addEventListener('click', (e) => {
+        const modal = document.getElementById('tourModal');
+        if (modal && e.target === modal) {
+            modal.style.display = 'none';
+        }
+    });
+
+</script>
+</body>
+<script>
+
+//scrolling the images
+function scrollLocations(direction) {
+    const container = document.getElementById("scrollable-locations");
+    const scrollAmount = 220; // approx width + margin
+    container.scrollBy({ left: direction * scrollAmount, behavior: 'smooth' });
+  }
+  
+  
+function showLocationInfo(element) {
+  const title = element.getAttribute("data-title");
+  const info = element.getAttribute("data-info");
+
+  document.getElementById("modalTitle").innerText = title;
+  document.getElementById("modalInfo").innerText = info;
+
+  document.getElementById("locationModal").style.display = "block";
+}
+
+function closeModal() {
+  document.getElementById("locationModal").style.display = "none";
+}
+
+// Optional: close on outside click
+window.onclick = function(event) {
+  const modal = document.getElementById("locationModal");
+  if (event.target === modal) {
+    closeModal();
+  }
+};
+
+function readMore(content) {
+  // Create overlay
+  const overlay = document.createElement('div');
+  overlay.className = 'readmore-overlay';
+  
+  // Create popup box
+  const popup = document.createElement('div');
+  popup.className = 'readmore-popup';
+  popup.innerHTML = `
+    <span class="close-btn" onclick="this.parentElement.parentElement.remove()">×</span>
+    <div class="popup-content">${content}</div>
+  `;
+
+  // Add popup to overlay
+  overlay.appendChild(popup);
+
+  // Add overlay to document
+  document.body.appendChild(overlay);
+}
+
+  // Get references to the menu button and nav links container
+  const menuBtn = document.getElementById('menu-btn');
+  const navLinks = document.getElementById('nav-links');
+
+  // Toggle the 'show' class on click
+  //menuBtn.addEventListener('click', () => {
+    //navLinks.classList.toggle('show');
+  //});
+//count
+
+  document.addEventListener("DOMContentLoaded", () => {
+    const counters = document.querySelectorAll(".count");
+    let animated = false;
+
+    function animateCounters() {
+      counters.forEach(counter => {
+        const target = +counter.getAttribute("data-target");
+        const duration = 2000;
+        const stepTime = 20;
+        const steps = duration / stepTime;
+        let count = 0;
+        const increment = target / steps;
+
+        const interval = setInterval(() => {
+          count += increment;
+          if (count >= target) {
+            count = target;
+            clearInterval(interval);
+          }
+          counter.textContent = Math.floor(count);
+        }, stepTime);
+      });
+    }
+
+    const observer = new IntersectionObserver((entries) => {
+      entries.forEach(entry => {
+        if (entry.isIntersecting && !animated) {
+          animateCounters();
+          animated = true;
+        }
+      });
+    }, {
+      threshold: 0.5
+    });
+
+    const statsSection = document.querySelector(".stats");
+    if (statsSection) observer.observe(statsSection);
+  });
+
+
+
+
+</script>
+</html>
